@@ -33,5 +33,8 @@ namespace DependencyInjectorBenchmarks
 
         [Benchmark]
         public ISingleton AspNetCore() => AspNetCoreBenchmark.Instance.ResolveSingleton();
+
+        [Benchmark]
+        public ISingleton StaticGenericPollution() => StaticGenericPollutionBenchmark.Instance.ResolveSingleton();
     }
 }

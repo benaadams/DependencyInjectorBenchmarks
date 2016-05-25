@@ -141,6 +141,7 @@
     <Compile Include="Containers\DirectBenchmark.cs">
       <DependentUpon>IContainerBenchmark.cs</DependentUpon>
     </Compile>
+    <Compile Include="Containers\StaticGenericPollutionBenchmark.cs" />
     <Compile Include="Containers\IContainerBenchmark.cs" />
     <Compile Include="Containers\Mef2Benchmark.cs">
       <DependentUpon>IContainerBenchmark.cs</DependentUpon>

@@ -22,6 +22,7 @@ namespace DependencyInjectorBenchmarks.Tests
             Assert.NotNull(AutofacBenchmark.Instance.ResolveSingleton());
             Assert.NotNull(UnityBenchmarks.Instance.ResolveSingleton());
             Assert.NotNull(AspNetCoreBenchmark.Instance.ResolveSingleton());
+            Assert.NotNull(StaticGenericPollutionBenchmark.Instance.ResolveSingleton());
 
             Assert.Same(DirectBenchmark.Instance.ResolveSingleton(), DirectBenchmark.Instance.ResolveSingleton());
             Assert.Same(Mef2Benchmark.Instance.ResolveSingleton(), Mef2Benchmark.Instance.ResolveSingleton());
@@ -32,6 +33,7 @@ namespace DependencyInjectorBenchmarks.Tests
             Assert.Same(AutofacBenchmark.Instance.ResolveSingleton(), AutofacBenchmark.Instance.ResolveSingleton());
             Assert.Same(UnityBenchmarks.Instance.ResolveSingleton(), UnityBenchmarks.Instance.ResolveSingleton());
             Assert.Same(AspNetCoreBenchmark.Instance.ResolveSingleton(), AspNetCoreBenchmark.Instance.ResolveSingleton());
+            Assert.Same(StaticGenericPollutionBenchmark.Instance.ResolveSingleton(), StaticGenericPollutionBenchmark.Instance.ResolveSingleton());
         }
 
         [Fact]
@@ -46,6 +48,7 @@ namespace DependencyInjectorBenchmarks.Tests
             Assert.NotNull(AutofacBenchmark.Instance.ResolveTransient());
             Assert.NotNull(UnityBenchmarks.Instance.ResolveTransient());
             Assert.NotNull(AspNetCoreBenchmark.Instance.ResolveTransient());
+            Assert.NotNull(StaticGenericPollutionBenchmark.Instance.ResolveTransient());
 
             Assert.NotSame(DirectBenchmark.Instance.ResolveTransient(), DirectBenchmark.Instance.ResolveTransient());
             Assert.NotSame(Mef2Benchmark.Instance.ResolveTransient(), Mef2Benchmark.Instance.ResolveTransient());
@@ -56,6 +59,7 @@ namespace DependencyInjectorBenchmarks.Tests
             Assert.NotSame(AutofacBenchmark.Instance.ResolveTransient(), AutofacBenchmark.Instance.ResolveTransient());
             Assert.NotSame(UnityBenchmarks.Instance.ResolveTransient(), UnityBenchmarks.Instance.ResolveTransient());
             Assert.NotSame(AspNetCoreBenchmark.Instance.ResolveTransient(), AspNetCoreBenchmark.Instance.ResolveTransient());
+            Assert.NotSame(StaticGenericPollutionBenchmark.Instance.ResolveTransient(), StaticGenericPollutionBenchmark.Instance.ResolveTransient());
         }
 
         [Fact]
@@ -70,6 +74,7 @@ namespace DependencyInjectorBenchmarks.Tests
             Assert.NotNull(AutofacBenchmark.Instance.ResolveCombined());
             Assert.NotNull(UnityBenchmarks.Instance.ResolveCombined());
             Assert.NotNull(AspNetCoreBenchmark.Instance.ResolveCombined());
+            Assert.NotNull(StaticGenericPollutionBenchmark.Instance.ResolveCombined());
 
             Assert.NotSame(DirectBenchmark.Instance.ResolveCombined(), DirectBenchmark.Instance.ResolveCombined());
             Assert.NotSame(Mef2Benchmark.Instance.ResolveCombined(), Mef2Benchmark.Instance.ResolveCombined());
@@ -80,6 +85,7 @@ namespace DependencyInjectorBenchmarks.Tests
             Assert.NotSame(AutofacBenchmark.Instance.ResolveCombined(), AutofacBenchmark.Instance.ResolveCombined());
             Assert.NotSame(UnityBenchmarks.Instance.ResolveCombined(), UnityBenchmarks.Instance.ResolveCombined());
             Assert.NotSame(AspNetCoreBenchmark.Instance.ResolveCombined(), AspNetCoreBenchmark.Instance.ResolveCombined());
+            Assert.NotSame(StaticGenericPollutionBenchmark.Instance.ResolveCombined(), StaticGenericPollutionBenchmark.Instance.ResolveCombined());
         }
     }
 }
